@@ -103,7 +103,7 @@ bool spi_start_extended(spi_start_config_t *start_config) {
         roundedDivisor <<= 1;
     }
 
-#    if defined(AT32F415)
+#    if defined(AT32F415) || defined(AT32F415)
     if (roundedDivisor < 2 || roundedDivisor > 1024) {
         return false;
     }
@@ -246,7 +246,7 @@ bool spi_start_extended(spi_start_config_t *start_config) {
             spiConfig.SSPCR0 |= SPI_SSPCR0_SPH; // Clock phase: sample on second edge transition
             break;
     }
-#elif defined(AT32F415)
+#elif defined(AT32F415) || defined(AT32F405)
     spiConfig.ctrl1 = 0;
 
     if (lsbFirst) {

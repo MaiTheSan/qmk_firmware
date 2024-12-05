@@ -146,7 +146,7 @@
 #if defined(MCU_AT32)
 #    define CPU_CLOCK AT32_SYSCLK
 
-#    if defined(AT32F415)
+ #    if defined(AT32F415) || (AT32F405)
 #        define USE_GPIOV1
 #        define USE_I2CV1
 #        define PAL_MODE_ALTERNATE_OPENDRAIN PAL_MODE_AT32_ALTERNATE_OPENDRAIN
