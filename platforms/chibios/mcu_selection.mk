@@ -856,7 +856,7 @@ ifneq ($(findstring AT32F405, $(MCU)),)
   #   OR
   #   <chibios[-contrib]>/os/hal/ports/$(MCU_FAMILY)/$(MCU_SERIES)
   MCU_FAMILY = AT32
-  MCU_SERIES = AT32F405
+  MCU_SERIES = AT32F405xx
 
   # Linker script to use
   # - it should exist either in <chibios>/os/common/startup/ARMCMx/compilers/GCC/ld/
