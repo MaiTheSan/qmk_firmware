@@ -866,7 +866,7 @@ ifneq ($(findstring AT32F405, $(MCU)),)
 
   # Startup code to use
   #  - it should exist in <chibios>/os/common/startup/ARMCMx/compilers/GCC/mk/
-  MCU_STARTUP ?= at32f405
+  MCU_STARTUP ?= at32f405xx
 
   # Board: it should exist either in <chibios>/os/hal/boards/,
   # <keyboard_dir>/boards/, or drivers/boards/
